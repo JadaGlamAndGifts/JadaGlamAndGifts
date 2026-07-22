@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jada Glam and Gifts | Bundles & Beauty Essentials</title>
+    <style>
+        :root {
+            --gold: #d4af37;
+            --pink: #ff6b81;
+            --dark: #222;
+            --light-bg: #fffcfc;
+            --card-bg: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--light-bg);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+
+        /* Header / Banner */
+        header {
+            background: linear-gradient(135deg, #f8d7da 0%, #ffe3e3 100%);
+            text-align: center;
+            padding: 60px 20px;
+            border-bottom: 3px solid var(--gold);
+        }
+
+        header h1 {
+            color: var(--dark);
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto 25px auto;
+            color: #555;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--pink);
+            color: white;
+            padding: 12px 28px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #e0556b;
+        }
+
+        /* Section Layouts */
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 30px;
+            color: var(--dark);
+            position: relative;
+        }
+
+        /* Product Bundle Grid */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid #eee;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card h3 {
+            margin-top: 0;
+            color: var(--dark);
+        }
+
+        .price {
+            font-size: 1.4rem;
+            color: var(--gold);
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .card ul {
+            padding-left: 20px;
+            color: #666;
+        }
+
+        .card ul li {
+            margin-bottom: 6px;
+        }
+
+        .card .btn {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        /* About Section */
+        .about-section {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            border: 1px solid #eee;
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .about-section p {
+            max-width: 800px;
+            margin: 0 auto;
+            color: #555;
+            font-size: 1.05rem;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: var(--dark);
+            color: white;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Banner -->
+    <header>
+        <h1>Jada Glam and Gifts</h1>
+        <p>Curated Glam & Beauty Bundles Built for You. Treat yourself or send the ultimate self-care gift!</p>
+        <a href="#bundles" class="btn">Shop Gift Bundles Now</a>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        
+        <!-- Bundles Section -->
+        <h2 id="bundles" class="section-title">🎁 Featured Gift Bundles</h2>
+        
+        <div class="grid">
+            
+            <!-- Bundle 1 -->
+            <div class="card">
+                <div>
+                    <h3>The Ultimate Spa Night Box</h3>
+                    <div class="price">$18.00</div>
+                    <p><em>The complete pamper package for your next night in. Reset your skin and enjoy total relaxation.</em></p>
+                    <ul>
+                        <li>1 Spa Sleepover Headband</li>
+                        <li>1 Satin Sleeping Mask</li>
+                        <li>1 TONYMOLY Sheet Mask</li>
+                        <li>1 Pair Under-Eye & Lip Mask Set</li>
+                        <li>1 Ruby Kisses Vita Lip Clear Lip Gloss</li>
+                    </ul>
+                </div>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+
+            <!-- Bundle 2 -->
+            <div class="card">
+                <div>
+                    <h3>Slick & Edge Hair Care Kit</h3>
+                    <div class="price">$16.00</div>
+                    <p><em>Achieve flawless edges, sleek updos, and effortless styling while protecting your hair day and night.</em></p>
+                    <ul>
+                        <li>1 Premium Satin Bonnet</li>
+                        <li>2 Multi-Color Satin Scrunchies</li>
+                        <li>1 Dual Edge Brush</li>
+                        <li>1 Precision Rat Tail Comb</li>
+                        <li>1 Teasing Brush</li>
+                        <li>1 Flower Hair Clip</li>
+                    </ul>
+                </div>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+
+            <!-- Bundle 3 -->
+            <div class="card">
+                <div>
+                    <h3>On-The-Go Refresh Bundle</h3>
+                    <div class="price">$20.00</div>
+                    <p><em>Stay cool, hydrated, and camera-ready no matter where your day takes you. Compact and travel-ready!</em></p>
+                    <ul>
+                        <li>1 Portable Small Fan / Folding Fan</li>
+                        <li>1 Compact Pocket Mirror</li>
+                        <li>1 Travel Makeup Brush</li>
+                        <li>1 Nourishing Chapstick</li>
+                        <li>1 Travel Hand Sanitizer</li>
+                        <li>1 Reusable Plastic Cup</li>
+                    </ul>
+                </div>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+
+        </div>
+
+        <!-- About Us Section -->
+        <div class="about-section">
+            <h2>Glamour Made Simple & Affordable</h2>
+            <p>Welcome to <strong>Jada Glam and Gifts</strong>! We believe looking and feeling your best shouldn't be complicated or overpriced. We hand-pick everyday beauty, hair care, and spa essentials to create fun, practical, and giftable sets delivered right to your door. Whether you're upgrading your hair care routine, treating your skin, or picking up a gift for someone special, we're here to add a little extra glam to your day!</p>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Jada Glam and Gifts. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
