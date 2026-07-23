@@ -1,121 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jada Glam and Gifts | Bundles & Individual Essentials</title>
-    <style>
-        :root {
-            --gold: #d4af37;
-            --pink: #ff6b81;
-            --dark: #222;
-            --light-bg: #fffcfc;
-            --card-bg: #ffffff;
+   /* Option Selector (Dropdowns) */
+        .option-select {
+            margin: 10px 0 15px 0;
         }
 
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: var(--light-bg);
-            color: var(--dark);
-            line-height: 1.6;
-        }
-
-        /* Header / Banner */
-        header {
-            background: linear-gradient(135deg, #f8d7da 0%, #ffe3e3 100%);
-            text-align: center;
-            padding: 60px 20px;
-            border-bottom: 3px solid var(--gold);
-        }
-
-        header h1 {
-            color: var(--dark);
-            font-size: 2.8rem;
-            margin-bottom: 10px;
-            letter-spacing: 1px;
-        }
-
-        header p {
-            font-size: 1.2rem;
-            max-width: 600px;
-            margin: 0 auto 25px auto;
+        .option-select label {
+            display: block;
+            font-size: 0.9rem;
+            font-weight: bold;
+            margin-bottom: 5px;
             color: #555;
         }
 
-        .btn {
-            display: inline-block;
-            background-color: var(--pink);
-            color: white;
-            padding: 12px 28px;
-            text-decoration: none;
-            border-radius: 25px;
-            font-weight: bold;
-            transition: background 0.3s ease;
-        }
-
-        .btn:hover {
-            background-color: #e0556b;
-        }
-
-        /* Section Layouts */
-        .container {
-            max-width: 1100px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
-
-        .section-title {
-            text-align: center;
-            font-size: 2rem;
-            margin: 50px 0 30px 0;
-            color: var(--dark);
-            position: relative;
-        }
-
-        /* Product Grids */
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
-        }
-
-        .card {
-            background: var(--card-bg);
-            border: 1px solid #eee;
-            border-radius: 12px;
-            padding: 25px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-        .card h3 {
-            margin-top: 0;
-            color: var(--dark);
-        }
-
-        .price {
-            font-size: 1.4rem;
-            color: var(--gold);
-            font-weight: bold;
-            margin: 10px 0;
-        }
-
-        .card ul {
-            padding-left: 20px;
-            color: #666;
-        }
-
-        .card ul li {
-            margin-bottom: 6px;
+        .option-select select {
+            width: 100%;
+            padding: 8px 12px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            font-size: 0.95rem;
+            background-color: #fafafa;
         }
 
         .card .btn {
             text-align: center;
-            margin-top: 15px;
+            margin-top: 10px;
         }
 
         /* About Section */
@@ -166,15 +73,17 @@
             <!-- Bundle 1 -->
             <div class="card">
                 <div>
+                    <img src="IMG_0479.PNG" alt="The Ultimate Spa Night Box" class="product-img">
                     <h3>The Ultimate Spa Night Box</h3>
                     <div class="price">$18.00</div>
                     <p><em>The complete pamper package for your next night in. Reset your skin and enjoy total relaxation.</em></p>
                     <ul>
                         <li>1 Spa Sleepover Headband</li>
                         <li>1 Satin Sleeping Mask</li>
-                        <li>1 TONYMOLY Sheet Mask</li>
+                        <li>1 Aottom Sheet Mask</li>
                         <li>1 Pair Under-Eye & Lip Mask Set</li>
-                        <li>1 Ruby Kisses Vita Lip Clear Lip Gloss</li>
+                        <li>1 Nourishing Chapstick</li>
+                        <li>1 Wrist bands Mircrofiber</li>
                     </ul>
                 </div>
                 <a href="#" class="btn">Add Bundle to Cart</a>
@@ -183,12 +92,13 @@
             <!-- Bundle 2 -->
             <div class="card">
                 <div>
+                    <img src="IMG_0475.jpeg" alt="Slick & Edge Hair Care Kit" class="product-img">
                     <h3>Slick & Edge Hair Care Kit</h3>
                     <div class="price">$16.00</div>
                     <p><em>Achieve flawless edges, sleek updos, and effortless styling while protecting your hair day and night.</em></p>
                     <ul>
                         <li>1 Premium Satin Bonnet</li>
-                        <li>2 Multi-Color Satin Scrunchies</li>
+                        <li>2 Satin Scrunchies</li>
                         <li>1 Dual Edge Brush</li>
                         <li>1 Precision Rat Tail Comb</li>
                         <li>1 Teasing Brush</li>
@@ -201,6 +111,7 @@
             <!-- Bundle 3 -->
             <div class="card">
                 <div>
+                    <img src="IMG_0479.PNG" alt="On-The-Go Refresh Bundle" class="product-img">
                     <h3>On-The-Go Refresh Bundle</h3>
                     <div class="price">$20.00</div>
                     <p><em>Stay cool, hydrated, and camera-ready no matter where your day takes you. Compact and travel-ready!</em></p>
@@ -218,24 +129,211 @@
 
         </div>
 
-        <!-- NEW: Single Items Section -->
+        <!-- Single Items Section -->
         <h2 id="singles" class="section-title">✨ Shop Individual Items</h2>
         
         <div class="grid">
 
-            <!-- Item 1 -->
+            <!-- Customizable Color Items -->
+
+            <!-- Item: Satin Bonnet -->
             <div class="card">
                 <div>
-                    <h3>Spa Sleepover Headband</h3>
-                    <div class="price">$5.00</div>
-                    <p>Keep your hair comfortably out of your face during skincare and makeup routines.</p>
+                    <img src="IMG_0376.jpg" alt="Satin Hair Bonnet" class="product-img">
+                    <h3>Satin Hair Bonnet</h3>
+                    <div class="price">$6.00</div>
+                    <p>Protects hair against breakage and preserves hairstyles while you sleep.</p>
+                    <div class="option-select">
+                        <label for="bonnet-color">Select Color:</label>
+                        <select id="bonnet-color">
+                            <option>Black</option>
+                            <option>Pink</option>
+                            <option>Gold</option>
+                         
+                        <option>Purple</option>
+                            <option>Green</option>
+                            <option>Blue</option>
+                            <option>Yellow</option>
+                            <option>Gray</option>
+                             <option>Orange</option>
+                            <option>Turquoise</option>
+                            <option>LightBlue</option>
+                            <option>LightPink</option>
+                            <option>White</option>
+                            <option>MintBlue</option>
+                            <option>Red</option>
+                            <option>DarkBlue</option>
+                            <option>Brown</option>
+                            <option>LightBronw</option>
+                            
+                        
+                        
+                            
+                                                   
+                                                   
+                                                   
+
+                            
+                
+                
+                    
+                        
+                           
+                    
+                        </select>
+                    </div>
                 </div>
                 <a href="#" class="btn">Add to Cart</a>
             </div>
 
-            <!-- Item 2 -->
+            <!-- Item: Satin Scrunchies -->
             <div class="card">
                 <div>
+                    <img src="IMG_0382.jpg" alt="Satin Scrunchies (2 Pack)" class="product-img">
+                    <h3>Satin Scrunchies (2 Pack)</h3>
+                    <div class="price">$4.00</div>
+                    <p>Soft satin scrunchies that won't pull or snag your hair. Includes 2 scrunchies.</p>
+                    <div class="option-select">
+                        <label for="scrunchie-color">Select Color Duo:</label>
+                        <select id="scrunchie-color">
+                            <option>Pink</option>
+                            <option>Black</option>
+                            <option>Gold</option>
+                            <option>Dark Forest Green</option>
+                            <option>Teal/SlateBlue</option>
+                            <option>Olive Green</option>
+                            <option>Khaki</option>
+                            <option>Copper</option>
+                            <option>Emerald Green</option>
+                            <option>Bright Green</option>
+                            <option>Mint Green</option>
+                            <option>Cyan</option>
+                            <option>Bright Blue</option>
+                            <option>Royal Blue</option>
+                            <option>Light Silver</option>
+                            <option>Charcoal Gray</option>
+                            <option>Deep Burgundy</option>
+                            <option>Deep Pink</option>
+                            <option>Berry</option>
+                            <option>Light Tan</option>
+                            <option>Light Yellow</option>
+                            <option>Yellow</option>
+                            <option>Burnt Orange</option>
+                            <option>Dark Chest</option>
+                             <optionz>Chocolate Brown</optionz>
+                            <option>Dark Indigo</option>
+                            <option>Violet</option>
+                             <option>Orange</option>
+                            <option>Turquoise</option>
+                            <option>LightBlue</option>
+                            <option>LightPink</option>
+                            <option>White</option>
+                            <option>MintBlue</option>
+                            <option>Red</option>
+                            <option>DarkBlue</option>
+                            <option>Brown</option>
+                            <option>LightBronw</option>
+                            <option>Deep Violet</option>
+                            <option>Navy Blue</option>
+                            <option>Orange</option>
+                            <option>Peach</option>
+                            <option>Blush Pink</option>
+                            <option>Rose Pink</option>
+                            <option>Hot Pink</option></option>
+                            <option>Bubblegum Pink</option>
+                            <option>Light Soft Pink</option>
+                            <option>Coral Red</option>
+                            <option>Bright Red</option>
+                            <option>Warm Orange</option
+                            <option>Bright Yellow</option>  
+                            <option>Mustard Yellow</option>
+                            <option>Magenta</option>
+                            <option>Sky Blue</option>
+                            <option>Light Lavender</option>
+                            <option>Medium Purple</option>
+                            <option>Mint Green</option>
+                            <option>Neon Green</option>
+                        
+
+                        
+                        
+                           
+                        </select>
+                    </div>
+                </div>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+
+            <!-- Item: Edge Brush -->
+            <div class="card">
+                <div>
+                    <img src="IMG_0378.jpg" alt="Hair Edge Brush" class="product-img">
+                    <h3>Hair Edge Brush</h3>
+                    <div class="price">$3.00</div>
+                    <p>Dual-sided comb and brush for styling smooth edges and baby hairs.</p>
+                    <div class="option-select">
+                        <label for="edge-brush-color">Select Color:</label>
+                        <select id="edge-brush-color">
+                            <option>Pink</option>
+                            <option>Black</option>
+                            <option>Purple</option>
+                        </select>
+                    </div>
+                </div>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+
+            <!-- Spa & Skincare Singles -->
+
+            <!-- Item: Spa Headband/Sleep Mask -->
+            <div class="card">
+                <div>
+                    <img src="IMG_0374.jpg" alt="Spa Sleepover Headband & sleep mask " class="product-img">
+                    <h3>Spa Sleepover Headband/Sleep Mask</h3>
+                    <div class="price">$5.00</div>
+                    <p>Keep your hair comfortably out of your face during skincare and makeup routines.Sleep Peacefully with morning light block out your sight</p>
+                </div>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+
+            <!-- Item: Wristbands -->
+            <div class="card">
+                <div>
+                    <img src="IMG_0399.jpeg" alt="Skincare Spa Wristbands" class="product-img">
+                    <h3>Skincare Spa Wristbands</h3>
+                    <div class="price">$4.00</div>
+                    <p>Absorbent wrist towels to stop water from running down your arms when washing your face.</p>
+                </div>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+
+        
+            <!-- Item: Lip Brush -->
+            <div class="card">
+                <div>
+                    <img src="IMG_0368.jpg" alt="Soft Lip Brush" class="product-img">
+                    <h3>Soft Lip Brush</h3>
+                    <div class="price">$2.50</div>
+                    <p>Precision brush for applying lip products smoothly and evenly.</p>
+                </div>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+
+            <!-- Item: Chapstick -->
+            <div class="card">
+                <div>
+                    <img src="IMG_0388.PNG" alt="Nourishing Chapstick" class="product-img">
+                    <h3>Nourishing Chapstick</h3>
+                    <div class="price">$2.00</div>
+                    <p>Hydrating everyday balm to protect and keep your lips moisturized.</p>
+                </div>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+
+            <!-- Item: Under-Eye & Lip Mask -->
+            <div class="card">
+                <div>
+                    <img src="IMG_0379.jpg" alt="Under-Eye & Lip Mask Pair" class="product-img">
                     <h3>Under-Eye & Lip Mask Pair</h3>
                     <div class="price">$4.00</div>
                     <p>Hydrating and refreshing set for soft lips and bright eyes.</p>
@@ -243,69 +341,82 @@
                 <a href="#" class="btn">Add to Cart</a>
             </div>
 
-            <!-- Item 3 -->
+            <!-- Item: Sheet Mask -->
             <div class="card">
                 <div>
-                    <h3>TONYMOLY Sheet Mask</h3>
+                    <img src="IMG_0380.jpg" alt="Aottom Sheet Mask" class="product-img">
+                    <h3>\Aottom Sheet Mask</h3>
                     <div class="price">$3.50</div>
                     <p>Premium face sheet mask to nourish and refresh your skin tone.</p>
                 </div>
                 <a href="#" class="btn">Add to Cart</a>
             </div>
 
-            <!-- Item 4 -->
+            <!-- Nails & Makeup Tools -->
+
+            <!-- Item: Cuticle Oil Pen -->
             <div class="card">
                 <div>
-                    <h3>Ruby Kisses Clear Lip Gloss</h3>
-                    <div class="price">$4.50</div>
-                    <p>Brow Way Vita Lip Clear gloss for maximum high-shine hydration.</p>
+                    <img src="IMG_0366.jpg" alt="Nourishing Cuticle Oil Pen" class="product-img">
+                    <h3>Nourishing Cuticle Oil Pen</h3>
+                    <div class="price">$3.50</div>
+                    <p>Easy applicator oil pen to hydrate and strengthen healthy cuticles and nails.</p>
                 </div>
                 <a href="#" class="btn">Add to Cart</a>
             </div>
 
-            <!-- Item 5 -->
+            <!-- Item: Nail File -->
             <div class="card">
                 <div>
-                    <h3>Satin Hair Bonnet</h3>
-                    <div class="price">$6.00</div>
-                    <p>Protects hair against breakage and preserves hairstyles while you sleep.</p>
+                    <img src="IMG_0365 3.jpg" alt="Shaping Nail File" class="product-img">
+                    <h3>Shaping Nail File</h3>
+                    <div class="price">$1.50</div>
+                    <p>Durable double-sided nail file for easy shaping and manicures at home.</p>
                 </div>
                 <a href="#" class="btn">Add to Cart</a>
             </div>
 
-            <!-- Item 6 -->
+            <!-- Item: Mini Makeup Sponges -->
             <div class="card">
                 <div>
-                    <h3>Satin Scrunchies (5 Pack)</h3>
+                    <img src="IMG_0387.PNG" alt="Mini Makeup Sponges" class="product-img">
+                    <h3>Mini Makeup Sponges</h3>
                     <div class="price">$4.00</div>
-                    <p>Soft multi-colored satin scrunchies that won't pull or snag your hair.</p>
+                    <p>Precision beauty sponges perfect for under-eye concealer and targeted blending.</p>
                 </div>
                 <a href="#" class="btn">Add to Cart</a>
             </div>
 
-            <!-- Item 7 -->
+            <!-- Hair Accessories -->
+
+            <!-- Item: Claw Clips -->
             <div class="card">
                 <div>
-                    <h3>Hair Styling Comb Set</h3>
-                    <div class="price">$5.00</div>
-                    <p>Includes rat tail comb, edge brush, and teasing brush for sleek styles.</p>
+                    <img src="IMG_0383.jpg" alt="Matte Hair Claw Clip" class="product-img">
+                    <h3>Matte Hair Claw Clip</h3>
+                    <div class="price">$4.00</div>
+                    <p>Strong-hold stylish claw clip perfect for easy updos without damaging hair.</p>
                 </div>
                 <a href="#" class="btn">Add to Cart</a>
             </div>
 
-            <!-- Item 8 -->
+            <!-- On-the-Go Accessories -->
+
+            <!-- Item: Mini Fan -->
             <div class="card">
                 <div>
+                    <img src="IMG_0391.PNG" alt="Portable Mini Fan" class="product-img">
                     <h3>Portable Mini Fan</h3>
                     <div class="price">$6.50</div>
-                    <p>Compact cooling fan perfect for hot days or setting your makeup setting spray.</p>
+                    <p>Compact cooling fan perfect for hot days or setting your makeup.</p>
                 </div>
                 <a href="#" class="btn">Add to Cart</a>
             </div>
 
-            <!-- Item 9 -->
+            <!-- Item: Compact Mirror -->
             <div class="card">
                 <div>
+                    <img src="IMG_0390.jpg" alt="Pocket Compact Mirror" class="product-img">
                     <h3>Pocket Compact Mirror</h3>
                     <div class="price">$3.00</div>
                     <p>Small, chic mirror for quick glam touch-ups anywhere on the go.</p>
@@ -315,6 +426,16 @@
 
         </div>
 
+        <!-- Item: Reusable Glitter Cup -->
+<div class="card">
+    <div>
+        <img src="IMG_0401.PNG" alt="Reusable Glitter Cup" class="product-img">
+        <h3>Reusable Glitter Cup</h3>
+        <div class="price">$5.00</div>
+        <p>Fun, sparkly reusable cup perfect for iced coffee, water, and cold drinks on the go.</p>
+    </div>
+    <a href="#" class="btn">Add to Cart</a>
+</div>
         <!-- About Us Section -->
         <div class="about-section">
             <h2>Glamour Made Simple & Affordable</h2>
